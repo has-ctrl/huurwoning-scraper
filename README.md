@@ -1,18 +1,29 @@
-# Stappenplan
+# Installation
+You can also use this script by following the next steps.
 
-1. [Optioneel] aanmaken en activeren virtual environment met bijv:
-    python3 -m venv REBO
-    source REBO/bin/activate.bat (voor Windows)
+1. Create a virtual environment with Python 3.10 (optional).
+```
+python -m venv venv
+venv/bin/activate.bat
+```
 
-2. Installeer dependencies met:
-    pip3 install -r requirements.txt
+2. Install the dependencies.
+```
+pip install -r requirements.txt
+```
 
-3. Download chrome driver voor selenium van: https://chromedriver.chromium.org/downloads
-   Kies voor jouw chrome versie (kan je checken in google chrome door te gaan naar de drie puntjes --> help --> about google chrome)
-   Download en unzip het bestand en plaatst het bestand in dezelfde folder als woningen.py
-
-Nu kan je het script (woningen.py) runnen. Je kan criteria waarop je wilt filteren aanpassen in het script zelf (bijv. prijs, grootte).
-Het duurt ff om te runnen maar uiteindelijk opent die alle beschikbare woningen die voldoen aan je criteria. 
-
+3. Install Chrome Driver for Selenium from [here](https://chromedriver.chromium.org/downloads). Choose the version of 
+chrome you currently have (Google Chrome > ... > Help > About Google Chrome). Download and unzip the file and place it 
+in the same folder as rebo.py. 
 
 
+4. Create config settings in config.toml to set preferences.
+
+
+5. Run the file (may take a while dependent on your settings).
+```
+python rebo.py
+```
+
+## Credits
+Shout-out to Djordi for the initial version of the script!
