@@ -1,7 +1,7 @@
 # Installation
 You can also use this script by following the next steps.
 
-1. Create a virtual environment with Python 3.10 (optional).
+1. Create a virtual environment with Python 3.11 (optional).
 ```
 python -m venv venv
 venv/bin/activate.bat
