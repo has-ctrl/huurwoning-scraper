@@ -16,7 +16,8 @@ def send_email(config: dict, urls: list):
         server.login(user=user, password=password)
 
         msg = EmailMessage()
-        msg["Subject"] = f"{len(urls)} NEW HOMES! | {dt.strftime('%d-%m-%Y %H:%M')}"
+        home_str = "HOME" if len(urls) == 1 else "HOMES"
+        msg["Subject"] = f"{len(urls)} NEW {home_str}! | {dt.strftime('%d-%m-%Y %H:%M')}"
         msg["From"] = f"{config['mail']['display_name']} <{user}>"
         msg["To"] = ', '.join(receivers)
 
