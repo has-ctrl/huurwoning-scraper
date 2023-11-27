@@ -4,23 +4,11 @@ import webbrowser
 import requests
 import tomllib
 
-from dataclasses import dataclass
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from tqdm import tqdm
 
 from util import mail, log
-
-
-@dataclass
-class Home:
-    name: str
-    region: str
-    city: str
-    url: str
-    price: int
-    bedrooms: int
-    area: int
 
 
 BASE_PATH = "C:/Users/Dominique/Documents/GitHub/huurwoning-scraper/"
